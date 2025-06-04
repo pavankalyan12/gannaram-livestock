@@ -6,14 +6,14 @@
   <title>Gannaram Livestock</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Custom yellow and black theme */
     :root {
       --yellow: #FFD300;
       --black: #1a1a1a;
+      --white: #FFFFFF;
     }
     body {
       background-color: var(--black);
-      color: var(--yellow);
+      color: var(--white);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     a {
@@ -46,13 +46,27 @@
       border-color: var(--yellow);
       margin: 1.5rem 0;
     }
+    /* Make paragraph text white */
+    p, ul, li {
+      color: var(--white);
+    }
+    ul.list-disc li {
+      margin-bottom: 0.5rem;
+    }
+    /* Slogan in yellow and italic */
+    .slogan {
+      color: var(--yellow);
+      font-style: italic;
+      font-weight: 700;
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col">
 
   <header class="bg-black shadow-md border-b-4 border-yellow-400 sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-3xl font-extrabold tracking-tight uppercase">Gannaram Livestock</h1>
+      <h1 class="text-3xl font-extrabold tracking-tight uppercase" style="color: var(--yellow);">Gannaram Livestock</h1>
       <nav>
         <a href="#what-we-do" class="mr-6 hover:text-white font-semibold">What We Do</a>
         <a href="#what-we-sell" class="mr-6 hover:text-white font-semibold">What We Sell</a>
@@ -66,16 +80,16 @@
     <!-- Hero Section -->
     <section class="text-center mb-16">
       <h2 class="section-title">Welcome to Gannaram Livestock</h2>
-      <p class="text-yellow-300 max-w-xl mx-auto text-lg leading-relaxed">
+      <p class="max-w-xl mx-auto text-lg leading-relaxed">
         Pure & fresh meat and poultry from the heart of Gannaram village, Dichpally, Telangana.
       </p>
-      <p class="mt-4 text-yellow-400 italic font-semibold">“Our Soil, Our Sheep, Our Strength”</p>
+      <p class="slogan">“Our Soil, Our Sheep, Our Strength”</p>
     </section>
 
     <!-- What We Do -->
     <section id="what-we-do" class="mb-16">
       <h2 class="section-title">What We Do</h2>
-      <p class="text-yellow-300 leading-relaxed max-w-4xl">
+      <p class="leading-relaxed max-w-4xl">
         At Gannaram Livestock, we raise healthy sheep and poultry using sustainable and natural methods. We ensure the highest quality by maintaining hygienic sheds, natural feed, and regular veterinary care.
         Our goal is to provide fresh meat, eggs, and breeding stock to local markets, contributing to the rural economy and supporting local farmers.
       </p>
@@ -84,7 +98,7 @@
     <!-- What We Sell -->
     <section id="what-we-sell" class="mb-16">
       <h2 class="section-title">What We Sell</h2>
-      <ul class="list-disc list-inside text-yellow-300 max-w-4xl space-y-2">
+      <ul class="list-disc list-inside max-w-4xl space-y-2">
         <li><strong>Sheep:</strong> Healthy lambs and mature sheep for meat and breeding.</li>
         <li><strong>Poultry:</strong> Fresh eggs and quality hens for meat production.</li>
         <li><strong>Organic Manure:</strong> Nutrient-rich sheep and poultry dung for your fields.</li>
@@ -106,7 +120,7 @@
     <!-- Contact -->
     <section id="contact" class="mb-20">
       <h2 class="section-title">Contact Us</h2>
-      <p class="text-yellow-300 max-w-3xl">
+      <p class="max-w-3xl">
         <strong>Vinay (Manager)</strong><br />
         📞 <a href="tel:+917095166342" class="hover:text-white">+917095166342</a><br />
         📧 <a href="mailto:gannaramlivestock@gmail.com" class="hover:text-white">luckypk@gmail.com</a><br />
